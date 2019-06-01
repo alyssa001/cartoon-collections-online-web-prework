@@ -9,10 +9,14 @@ def summon_captain_planet(array)
 end
 
 def long_planeteer_calls(array)
-  if array {|x| x.length > 4}
-    return true
-  else
-    return false
+  array.each do |x|
+        array << x.length
+        if array {|x| x.length > 4}
+          return true
+        else
+          return false
+        end
+      end
 end
 
 def find_the_cheese# code an argument here
